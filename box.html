@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice</title>
+
+    <style>
+        body {
+            background-color: aqua;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 5vw; /* scales with screen */
+            text-align: center;
+        }
+
+        .box {
+            width: 80%;
+            max-width: 600px;
+            background-color: lightgray;
+            padding: 20px;
+            margin: 0 auto;
+            text-align: center;
+
+            /* Hover effect */
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            background-color: lightgreen;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Online Shopping</h1>
+
+    <div class="box">
+        <p>
+            This website works on both mobile and laptop. 
+            On large screens, layout looks normal. 
+            On small screens, layout adjusts automatically. 
+            Hover over the box to see color change and zoom effect.
+        </p>
+    </div>
+
+</body>
+</html>

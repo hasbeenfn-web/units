@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Hover Effects</title>
+<style>
+  /* Container to center the box */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+    font-family: Arial, sans-serif;
+  }
+
+  /* The box */
+  .box {
+    width: 150px;
+    height: 150px;
+    background-color:lightsalmon; /* Basic color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    
+    /* Smooth animation for multiple properties */
+    transition:all 0.3s ease;
+    overflow: hidden;
+  }
+
+  /* Hidden text inside the box */
+  .box p {
+    opacity: 0; /* Start hidden */
+    transition:0.5s ease; /* Fade-in effect */
+    position:absolute;
+    bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* Hover effects */
+  .box:hover {
+    background-color:purple;      /* Change color */
+    transform: scale(1.2);             /* Grow bigger */
+  }
+
+  /* Reveal text on hover */
+  .box:hover p {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<div class="box">
+  hello
+  <p>welcome</p>
+</div>
+
+</body>
+</html>
